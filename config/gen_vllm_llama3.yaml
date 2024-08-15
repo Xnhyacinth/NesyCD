@@ -1,0 +1,39 @@
+### model
+# model_name_or_path: meta-llama/Meta-Llama-3-70B-Instruct
+# model_name_or_path: meta-llama/Meta-Llama-3-8B
+model_name_or_path: meta-llama/Llama-2-7b-hf
+# model_name_or_path: meta-llama/Llama-2-7b-chat-hf
+# adapter_name_or_path: saves/llama3-8b/lora/sft
+
+flash_attn: fa2
+### method
+# finetuning_type: lora
+
+### dataset
+task: know/bbh
+split: test_summary #all_task_test # all_task_train_right_answer
+template: fewshot #fewshot
+lang: gen_bbh
+n_shot: 3
+
+### output
+# save_dir: saves/llama3-8b/eval/bbh/gen_vllm_cot_test_0shot
+save_dir: saves/llama2-7b/eval/bbh/gen_vllm_test_3shot
+# save_dir: saves/llama3-8b/eval/csqa_gen
+# save_dir: saves/llama3-8b-Instruct/eval/csqa
+# save_dir: saves/llama2-7b-chat/eval/csqa
+# mv saves/llama3-8b/eval/bbh/gen_vllm_cot saves/llama3-8b/eval/bbh/gen_vllm_cot_train
+### eval
+batch_size: 8
+gen_chat: True
+vllm: True
+
+### gen
+max_new_tokens: 1024
+do_sample: False
+# temperature: 0.1
+# top_p: 0.75
+temperature: 0.6
+top_p: 0.9
+top_k: 50
+repetition_penalty: 1.0
