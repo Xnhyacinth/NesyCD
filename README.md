@@ -17,3 +17,6 @@ Install pyserini following [pyserini](https://github.com/castorini/pyserini).
 
 - From Google drive: (we unified the formats of the above datasets). [Link]()
 
+### Details
+
+Coming Soon!
