@@ -21,10 +21,13 @@ Install pyserini following [pyserini](https://github.com/castorini/pyserini).
 
 If you find our work useful in your research and would like to cite our project, please use the following citation: found this work useful, please consider giving this repository a star and citing our paper as follows:
 ```bibtex
-@article{liao2024neural,
-  title={Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks},
+@inproceedings{liao2025neural,
+  title={Neural-symbolic collaborative distillation: Advancing small language models for complex reasoning tasks},
   author={Liao, Huanxuan and He, Shizhu and Xu, Yao and Zhang, Yuanzhe and Liu, Kang and Zhao, Jun},
-  journal={arXiv preprint arXiv:2409.13203},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={23},
+  pages={24567--24575},
+  year={2025}
 }
 ```
