@@ -149,7 +149,7 @@ Q: Given a series of navigation instructions, determine whether one would end up
 """
       
 with open('evaluation/know/bbh/fewshot.json', 'r') as json_file:
-    bbh = json.load(json_file)
+     = json.load(json_file)
 bbh_temp = [
     {
         'question': "Question: Find a movie similar to Interstellar, Monsters, Inc, Back to the Future, Inception:\nOptions:\n(A) My Fellow Americans\n(B) Shadow of the Vampire\n(C) Star Wars Episode VII - The Force Awakens\n(D) Psycho II\nAnswer: (C).\n\nSummary of learning as a numbered list:",
